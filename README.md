@@ -8,7 +8,7 @@ This repository contains practical examples of using Terraform to provision and 
 - [Advanced](/advanced/): These examples cover use cases that involve multiple resources. (example: *Creating a VM with block-storage attached*)
 
 # Contribute 👩🏽‍💻
-This repository is public. If you'd like to contribute more examples, just open a branch and our team will review it.
+This repository is public. If you'd like to contribute more examples, just open a Pull Request and our team will review it.
 
 # References
 [Magalu Cloud Official Documentation](https://docs.magalu.cloud/docs/terraform/overview)
