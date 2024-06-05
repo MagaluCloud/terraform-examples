@@ -1,4 +1,4 @@
-<img src="https://magalu.cloud/wp-content/uploads/2023/12/Logo-coloridoAssets-1.jpg" width="150"/>
+<img src="https://github.com/MagaluCloud/terraform-examples/assets/13826728/d252f2f2-9288-47bd-9220-fc995faaf059" width="150"/>
 
 # Magalu Cloud Terraform Examples
 
