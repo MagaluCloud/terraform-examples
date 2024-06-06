@@ -4,3 +4,5 @@ This subrepository is part of the main repository that provides practical exampl
 
 - [Virtual Machines](/simple/virtual-machines/)
 - [Kubernetes](/simple/kubernetes/)
+- [Object Storage](/simple/object-storage/)
+- [Block Storage](/simple/block-storage/)
