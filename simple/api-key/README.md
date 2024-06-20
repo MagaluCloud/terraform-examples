@@ -4,8 +4,7 @@ To use the Magalu Cloud (MGC) provider in Terraform, you need to authenticate us
 
 ## Step 1: Obtain Your API Key
 
-Before you can authenticate with the MGC provider, you need to obtain your API key from the Magalu Cloud dashboard. If you haven't already, log in to your ID Magalu Cloud account and navigate to the API section to generate or copy your existing API key. 
-[Click here](https://id.magalu.com/api-keys) to navigate to the API section in the Magalu Cloud dashboard and obtain your API key.
+Follow the instructions in [this document](https://docs.magalu.cloud/docs/terraform/how-to/auth/) to obtain the API key
 
 ## Step 2: Configure the MGC Provider in Terraform
 

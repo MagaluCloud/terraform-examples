@@ -2,7 +2,6 @@ terraform {
   required_providers {
     mgc = {
       source = "magalucloud/mgc"
-      version = "0.19.0"
     }
   }
 }
@@ -22,7 +21,7 @@ resource "mgc_virtual-machine_instances" "basic_instance_nordeste" {
     associate_public_ip = false # If true, will create a public IP
   }
   delete_public_ip = false
-  ssh_key_name   = var.ssh_key_name
+  ssh_key_name   = "ssh_key"
 }
 
 # Create a VM at Sudeste br-se1
@@ -39,7 +38,7 @@ resource "mgc_virtual-machine_instances" "basic_instance" {
     associate_public_ip = false
   }
   delete_public_ip = false
-  ssh_key_name   = var.ssh_key_name
+  ssh_key_name   = "ssh_key"
 }
 
 # Create a VM and associate a Public IP
@@ -56,5 +55,5 @@ resource "mgc_virtual-machine_instances" "basic_instance" {
     associate_public_ip = true
   }
   delete_public_ip = true # We specify that when this VM is deleted, the public IP should be deleted as well.
-  ssh_key_name   = var.ssh_key_name
+  ssh_key_name   = "ssh_key"
 }
