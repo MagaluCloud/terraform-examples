@@ -34,7 +34,7 @@ This guide explains how to configure Terraform to use the S3 backend for storing
        key                         = "terraform.tfstate"
        secret_key                  = "your-secret-key"
        access_key                  = "your-access-key"
-       region                      = "br-se1"
+       region                      = "your-region"
        skip_region_validation      = true
        skip_credentials_validation = true
        skip_requesting_account_id  = true
