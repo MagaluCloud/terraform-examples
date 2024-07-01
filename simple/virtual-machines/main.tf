@@ -57,3 +57,24 @@ resource "mgc_virtual-machine_instances" "basic_instance" {
   delete_public_ip = true # We specify that when this VM is deleted, the public IP should be deleted as well.
   ssh_key_name   = "ssh_key"
 }
+
+# Create a VM and associate with specific Security Group
+resource "mgc_virtual-machine_instances" "basic_instance_with_SG" {
+  name = "basic-instance-nordeste"
+  machine_type = {
+    name = "cloud-bs1.xsmall"
+  }
+  image = {
+    name = "cloud-ubuntu-22.04 LTS"
+  }
+  network = {
+    associate_public_ip = false # If true, will create a public IP
+    interface = {
+      security_groups = [
+        {id = "aa622bcb-6861-4251-9cdb-aaadf3" }
+      ]
+    }
+  }
+  delete_public_ip = false
+  ssh_key_name   = "ssh_key"
+}
