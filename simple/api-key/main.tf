@@ -10,7 +10,7 @@ provider mgc {
     api_key = "your-api-key"
 }
 
-resource "mgc_virtual-machine_instances" "basic_instance" {
+resource "mgc_virtual_machine_instances" "basic_instance" {
   name = "basic-instance"
   machine_type = {
     name = "cloud-bs1.xsmall"
