@@ -1,7 +1,7 @@
 terraform {
   required_providers {
     mgc = {
-      source = "local/magalu/mgc"
+      source = "magalucloud/mgc"
     }
   }
 }
