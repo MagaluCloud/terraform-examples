@@ -6,6 +6,7 @@ This repository contains practical examples of using Terraform to provision and 
 
 - [Simple](/simple/): These examples demonstrate simple usage for individual resources. (example: *Create a VM*)
 - [Advanced](/advanced/): These examples cover use cases that involve multiple resources. (example: *Creating a VM with block-storage attached*)
+- [Datasources](/datasources/): These examples demonstrate how to use datasources to retrieve information about existing resources. (example: *Retrieve the kubeconfig for a Kubernetes cluster*)
 
 # Contribute 👩🏽‍💻
 This repository is public. If you'd like to contribute more examples, just open a Pull Request and our team will review it.
