@@ -6,7 +6,7 @@ terraform {
   }
 }
 
-resource "mgc_object-storage_buckets" "my-bucket" {
+resource "mgc_object_storage_buckets" "my-bucket" {
   provider = mgc.sudeste
   bucket = "bucket-name"
   enable_versioning = true

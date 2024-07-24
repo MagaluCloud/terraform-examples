@@ -7,7 +7,7 @@ terraform {
 }
 
 # Create a volume 
-resource "mgc_block-storage_volumes" "example_volume" {
+resource "mgc_block_storage_volumes" "example_volume" {
   provider = mgc.nordeste
   name = "example-volume"
   size = 10
@@ -17,7 +17,7 @@ resource "mgc_block-storage_volumes" "example_volume" {
 }
 
 # Create a VM at Nordeste br-ne1
-resource "mgc_virtual-machine_instances" "basic_instance_nordeste" {
+resource "mgc_virtual_machine_instances" "basic_instance_nordeste" {
   provider = mgc.nordeste # We specify the provider region here to indicate that this VM should be created in the Nordeste region.
   name = "basic-instance-nordeste"
   machine_type = {
@@ -34,7 +34,7 @@ resource "mgc_virtual-machine_instances" "basic_instance_nordeste" {
 }
 
 # Attaching the VM with Block Storage
-resource "mgc_block-storage_volume-attachment" "attached_block_storage" {
+resource "mgc_block_storage_volume-attachment" "attached_block_storage" {
   block_storage_id = mgc_block-storage_volumes.example_volume.id
   virtual_machine_id = mgc_virtual-machine_instances.basic_instance_nordeste.id
 }
