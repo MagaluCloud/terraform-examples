@@ -6,3 +6,4 @@ This subrepository is part of the main repository that provides practical exampl
 - [Kubernetes](/simple/kubernetes/)
 - [Object Storage](/simple/object-storage/)
 - [Block Storage](/simple/block-storage/)
+- [API Key with Variables](/simple/api-key-with-vars/)
