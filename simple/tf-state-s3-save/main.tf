@@ -1,7 +1,7 @@
 terraform {
   required_providers {
     mgc = {
-      source = "magalucloud/mgc"
+      source = "registry.terraform.io/magalucloud/mgc"
     }
   }
   backend "s3" {
