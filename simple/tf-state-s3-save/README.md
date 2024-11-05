@@ -26,7 +26,7 @@ This guide explains how to configure Terraform to use the S3 backend for storing
    terraform {
      required_providers {
        mgc = {
-         source = "magalucloud/mgc"
+         source = "registry.terraform.io/magalucloud/mgc"
        }
      }
      backend "s3" {
