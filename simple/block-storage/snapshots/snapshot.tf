@@ -16,7 +16,5 @@ data "terraform_remote_state" "volume" {
 resource "mgc_block_storage_snapshots" "snapshot_example" {
   description = "exemplo de snapshot descrição"
   name = "exemplo snapshot name"
-  volume = {
-    id = data.terraform_remote_state.volume.outputs.example_volume_id
-  }
+  volume_id = data.terraform_remote_state.volume.outputs.example_volume_id
 }

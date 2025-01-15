@@ -6,14 +6,11 @@ terraform {
   }
 }
 
-resource "mgc_dbaas_instances" "dbaas_example" {
-  flavor_id = "8bbe8e01-40c8-4d2b-80e8-189debc44b1c"
-  name = "dbaas-example"
-  user = "admin"
-  password = "admin123"
-  engine_id = "063f3994-b6c2-4c37-96c9-bab8d82d36f7"
-  volume = {
-    size = 10
-    type = "CLOUD_NVME_15K"
-  }
+resource "mgc_dbaas_instances" "dbaas_instances" {
+  name                = "my-database-instance"
+  user                = "db_user"
+  password            = "secure_password123"
+  engine_name         = "mysql 8.0"
+  instance_type_name  = "cloud-dbaas-bs1.medium"
+  volume_size         = 50
 }
