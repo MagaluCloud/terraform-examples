@@ -9,7 +9,7 @@ terraform {
 # Create a Cluster with nodepool
 resource "mgc_kubernetes_cluster" "cluster" {
   name                 = "cluster-example"
-  version              = "v1.28.5"
+  version              = "v1.30.2"
   enabled_server_group = false
   description          = "Cluster Example"
 }
